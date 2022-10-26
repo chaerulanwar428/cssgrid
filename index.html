@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cssgrid</title>
+    <title>float</title>
     <style>
       body,
       html {
@@ -30,6 +30,17 @@
         padding: 40px 0;
       }
 
+      .content::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+
+      .asidebar {
+        float: left;
+        width: 40%;
+      }
+
       .asidebar aside {
         background-color: #2f93ff;
         padding: 60px;
@@ -38,6 +49,13 @@
       .asidebar nav {
         background-color: #e45765;
         padding: 100px 0;
+      }
+      main {
+        background-color: #e0aa77;
+        width: 60%;
+        float: right;
+        box-sizing: border-box;
+        padding: 171.5px;
       }
 
       footer {
