@@ -2,23 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>repeat</title>
+    <title>CSS Grid | Columns & Rows</title>
     <style>
       html,
       body {
-        width: 0;
+        margin: 0;
         padding: 0;
-        margin: 50px auto;
+        background-color: #ddd;
       }
 
       .container {
+        width: 60%;
         margin: 50px auto;
         display: grid;
-        grid-template-columns: repeat(4, 100px);
-        grid-template-rows: repeat(5, 10fr);
-        width: 100%;
+        /* grid-template-columns: 25% auto 50px; */
+        grid-template-columns: repeat(4, 1fr) repeat(5, 1.5fr);
       }
 
       .item {
@@ -33,6 +32,7 @@
       }
     </style>
   </head>
+
   <body>
     <div class="container">
       <div class="item">1</div>
