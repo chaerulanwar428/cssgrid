@@ -17,21 +17,22 @@
         width: 60%;
         margin: 50px auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template:
+          [baris1-mulai] 'header header header' 50px [baris1-akhir]
+          [baris2-mulai] 'footer footer footer' 50px [baris2-akhir]
+          / 1fr 2fr 3fr;
       }
       .item {
-        width: 100%;
         background-color: rgb(138, 209, 254);
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 100px;
         box-sizing: border-box;
       }
 
-      /* .item:nth-child(even) {
+      .item:nth-child(even) {
         background-color: rgb(255, 142, 142);
-      } */
+      }
       /* responsive breakpoint */
 
       /* @media screen and (min-width: 576px){
@@ -53,9 +54,9 @@
       <div class="item">4</div>
       <div class="item">5</div>
       <div class="item">6</div>
-      <div class="item">7</div>
+      <!-- <div class="item">7</div>
       <div class="item">8</div>
-      <div class="item">9</div>
+      <div class="item">9</div> -->
     </div>
   </body>
 </html>
