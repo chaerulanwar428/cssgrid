@@ -40,6 +40,12 @@ body {
   padding: 50px;
 }
 
+.hero .heading,
+.hero .sub-heading {
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
 .hero > * {
   display: none;
 }
